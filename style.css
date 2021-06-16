@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, left bottom, from(cyan), to(lightgreen));
+  background: linear-gradient(cyan, lightgreen);
+}
+
+.container {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+@media all and (max-width: 500px) {
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, from(#af4537), to(#8157b1));
+    background: linear-gradient(#af4537, #8157b1);
+  }
+}
+
+@media (orientation: landscape) {
+  .title {
+    color: red;
+  }
+}
+
+@media (orientation: portrait) {
+  .subtitle {
+    color: green;
+  }
+}
+/*# sourceMappingURL=style.css.map */
